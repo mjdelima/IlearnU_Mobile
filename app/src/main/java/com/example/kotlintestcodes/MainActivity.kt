@@ -28,14 +28,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+//        setContentView(R.layout.activity_main)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         loadWebsite()
         lastTime = getTime()
-
-
 
         tinyDB = TinyDB(applicationContext)
     }
@@ -130,9 +128,5 @@ class MainActivity : AppCompatActivity() {
         Log.d("LOGS", "=================================")
 
     }
-
-
-
-
 
 }
